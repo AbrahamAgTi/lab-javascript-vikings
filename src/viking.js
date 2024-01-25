@@ -44,9 +44,7 @@ class Viking extends Soldier {
 
 // Saxon
 class Saxon extends Soldier{
-    // constructor (health, strength){
-    //     super (health, strength)
-    //}
+    
     
     receiveDamage(thedamage){
         this.health -= thedamage
@@ -62,7 +60,23 @@ class Saxon extends Soldier{
 }
 
 
-// War
-class War {}
+// BONUS - Iteration 4:War
+class War {
+   vikingArmy=[]
+   saxonArmy=[] 
+
+   addViking(){
+    vikingArmy+=Viking
+    Viking++
+   }
+   addSaxon(Saxon){
+    this.saxonArmy+=Saxon
+   }
+//    vikingAttack(
+
+//    )
+
+
+}
 
 
