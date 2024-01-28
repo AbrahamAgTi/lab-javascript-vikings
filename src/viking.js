@@ -79,14 +79,28 @@ class War {
 // should make a Saxon receiveDamage() equal to the strength of a Viking
 // should remove dead Saxons from the army
 // should return result of calling receiveDamage() of a Saxon with the strength of a Viking
-//wrong code :
+//wrong code below:
    vikingAttack() {
-    this.Saxon.receiveDamage(this.Saxon.strength)
-    
+     this.saxon.receiveDamage(this.viking.strength)
 
+     if (this.saxon.health <= 0) {
+       this.saxonArmy.splice(this.saxon, 1)
+     } 
+     return receiveDamage(this.viking.strength)
    }
 
+   saxonAttack(){
+    this.viking.receiveDamage(this.saxon.strength)
+
+    if (this.viking.health <= 0) {
+        this.vikingArmy.splice(this.viking, 1)
+      } 
+      return receiveDamage(this.saxon.strength)
+     
+   }
 
 }
+
+
 
 
