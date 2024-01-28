@@ -99,8 +99,21 @@ class War {
      
    }
 
+
+   showStatus(){
+    if (saxonArmy=[]){
+        return `Vikings have won the war of the century!`
+    }
+    if (vikingArmy=[]){
+        return `Saxons have fought for their lives and survived another day...`
+    } 
+    if(Viking>=1 && Saxon>=1){
+        return `Vikings and Saxons are still in the thick of battle.`
+    }
 }
 
+
+}
 
 
 
