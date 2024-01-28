@@ -62,19 +62,29 @@ class Saxon extends Soldier{
 
 // BONUS - Iteration 4:War
 class War {
+    constructor (){
+        
+    }
+    
    vikingArmy=[]
    saxonArmy=[] 
 
-   addViking(){
-    vikingArmy+=Viking
-    Viking++
+   addViking(Viking){
+    this.vikingArmy.push(Viking)
+    
    }
    addSaxon(Saxon){
-    this.saxonArmy+=Saxon
+    this.saxonArmy.push(Saxon)
    }
-//    vikingAttack(
+// should make a Saxon receiveDamage() equal to the strength of a Viking
+// should remove dead Saxons from the army
+// should return result of calling receiveDamage() of a Saxon with the strength of a Viking
+//wrong code :
+   vikingAttack() {
+    this.Saxon.receiveDamage(this.Saxon.strength)
+    
 
-//    )
+   }
 
 
 }
